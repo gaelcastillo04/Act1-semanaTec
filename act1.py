@@ -1,8 +1,7 @@
 import cv2
 import easyocr
 
-
-
+#Esta funcion procesa una imagen y imprime el texto detectado.
 def procesar_imagen(nombre_archivo):
     imagen=cv2.imread(nombre_archivo)  #leemmos la imagen 
     imagen_gray= cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)  #convertimos a gray scale
